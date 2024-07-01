@@ -1,7 +1,7 @@
 # jg.yaml
 
 # 数据集路径
-path: ./jg_detection/data  # 数据集的根目录
+path: ../summer_internship_manhole_cover_detection/jg_detection/data  # 数据集的根目录
 
 # 训练和验证数据集的相对路径
 train: images/train  # 训练集图片文件夹路径（相对于path）
