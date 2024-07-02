@@ -2,9 +2,9 @@ import os
 from ultralytics import YOLO
 from tqdm import tqdm
 
-model = YOLO("runs/detect/train3/weights/best.pt")
+model = YOLO("runs/detect/train/weights/best.pt")
 
-img_folder = 'images'  # 图片文件夹路径
+img_folder = 'images_for_detection/images/val'  # 图片文件夹路径
 img_names = [os.path.splitext(f)[0] for f in os.listdir(img_folder) if os.path.isfile(os.path.join(img_folder, f))]
 
 for img_name in tqdm(img_names):
