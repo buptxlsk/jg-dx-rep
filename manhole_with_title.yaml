@@ -1,0 +1,14 @@
+# jg.yaml
+
+# 数据集路径
+path: ../summer_internship_manhole_cover_detection/images_for_detection # 数据集的根目录
+
+# 训练和验证数据集的相对路径
+train: images/train  # 训练集图片文件夹路径（相对于path）
+val: images/val  # 验证集图片文件夹路径（相对于path）
+
+# 类别信息
+names:
+  0: manhole_cover
+  1: manhole_cover_with_title
+

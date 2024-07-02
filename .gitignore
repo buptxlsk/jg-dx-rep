@@ -138,3 +138,7 @@ ultralytics/utils/callbacks/__pycache__/raytune.cpython-39.pyc
 ultralytics/utils/callbacks/__pycache__/tensorboard.cpython-39.pyc
 ultralytics/utils/callbacks/__pycache__/wb.cpython-39.pyc
 images_deteted/.ipynb_checkpoints/MVIMG_20240628_131245-checkpoint.jpg
+images/
+images_deteted/
+images_for_detection/
+jg_detection/data/
