@@ -2,7 +2,7 @@ import os
 import json
 
 # 定义文件夹路径
-images_folder = '/path/to/images/folder'
+images_folder = 'images'
 
 # 遍历文件夹中的所有json文件
 for file_name in os.listdir(images_folder):
