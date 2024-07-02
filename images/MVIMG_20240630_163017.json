@@ -19,6 +19,42 @@
       "shape_type": "rectangle",
       "flags": {},
       "mask": null
+    },
+    {
+      "label": "1",
+      "points": [
+        [
+          2059.52380952381,
+          2514.285714285714
+        ],
+        [
+          1611.9047619047622,
+          1857.142857142857
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "1",
+      "points": [
+        [
+          1516.6666666666667,
+          2309.5238095238096
+        ],
+        [
+          1169.047619047619,
+          1700.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "MVIMG_20240630_163017.jpg",

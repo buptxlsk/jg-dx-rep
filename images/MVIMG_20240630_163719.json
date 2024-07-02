@@ -19,6 +19,24 @@
       "shape_type": "rectangle",
       "flags": {},
       "mask": null
+    },
+    {
+      "label": "1",
+      "points": [
+        [
+          1921.4285714285718,
+          2423.809523809524
+        ],
+        [
+          1411.9047619047622,
+          1757.142857142857
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "MVIMG_20240630_163719.jpg",
