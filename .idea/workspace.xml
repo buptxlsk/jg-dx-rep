@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5711714-5823-4ce3-b8a5-a627fb0b5a60" name="更改" comment="" />
+    <list default="true" id="b5711714-5823-4ce3-b8a5-a627fb0b5a60" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jg_dx_yolo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/classes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/predict_cutting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_cutting.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_cutting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jg.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/jg.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,14 +46,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="manhole_cover_detection" />

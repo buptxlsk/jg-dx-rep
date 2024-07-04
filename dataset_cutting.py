@@ -15,7 +15,7 @@ for filename in os.listdir(image_folder):
         image_path = os.path.join(image_folder, filename)
         txt_path = os.path.join(image_folder, filename.replace('.jpg', '.txt'))
         
-        # 读取图像
+        # 读取图像S
         with Image.open(image_path) as img:
             width, height = img.size
 
