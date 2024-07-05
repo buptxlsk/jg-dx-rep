@@ -3,12 +3,12 @@ import cv2
 from ultralytics import YOLO
 
 # 加载 YOLO 模型
-model = YOLO("D:/Code/jg_dx_yolo/runs/detect/train/weights/best.pt")
+model = YOLO("/home/xlsk/Code/jg-dx-rep/runs/detect/train3/weights/best.pt")
 
 # 输入图像文件夹
-img_folder = "D:/Code/jg_dx_yolo/my_dataset/images"
+img_folder = "/home/xlsk/Code/jg-dx-rep/my_dataset/train/uncovered"
 # 输出裁剪图像文件夹
-output_folder = "D:/Code/jg_dx_yolo/my_dataset/output_crops"
+output_folder = "/home/xlsk/Code/jg-dx-rep/my_dataset/train/uncovered_crop"
 os.makedirs(output_folder, exist_ok=True)
 
 # 初始化序号
