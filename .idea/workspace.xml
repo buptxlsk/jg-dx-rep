@@ -5,17 +5,327 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5711714-5823-4ce3-b8a5-a627fb0b5a60" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jg_dx_yolo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_dataset/classes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict_cutting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/line.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/10.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/100.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/100.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/101.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/101.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/101.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/102.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/102.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/102.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/103.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/103.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/103.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/104.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/104.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/104.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/105.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/105.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/105.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/106.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/106.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/106.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/107.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/107.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/107.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/11.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/12.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/15.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/16.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/17.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/18.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/18.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/19.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/19.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/20.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/21.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/21.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/22.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/22.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/23.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/23.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/24.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/24.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/25.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/26.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/26.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/27.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/28.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/28.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/28.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/29.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/29.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/30.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/30.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/31.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/31.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/32.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/32.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/32.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/33.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/33.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/34.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/34.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/34.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/35.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/35.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/35.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/36.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/36.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/36.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/37.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/37.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/38.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/38.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/39.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/39.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/39.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/40.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/40.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/41.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/41.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/41.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/43.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/43.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/43.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/44.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/44.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/44.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/45.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/45.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/45.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/46.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/46.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/46.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/47.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/47.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/48.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/48.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/48.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/49.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/49.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/49.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/50.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/50.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/51.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/51.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/52.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/52.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/53.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/53.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/53.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/54.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/54.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/55.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/55.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/55.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/56.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/56.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/56.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/57.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/57.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/58.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/58.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/58.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/59.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/59.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/59.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/60.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/60.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/61.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/61.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/61.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/62.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/62.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/62.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/63.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/63.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/63.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/64.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/64.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/64.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/65.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/65.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/65.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/66.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/66.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/66.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/67.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/67.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/67.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/68.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/68.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/68.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/69.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/69.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/69.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/70.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/70.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/70.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/71.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/71.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/71.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/72.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/72.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/72.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/73.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/73.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/73.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/74.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/74.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/75.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/75.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/75.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/76.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/76.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/76.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/77.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/77.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/77.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/78.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/78.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/78.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/79.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/79.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/79.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/80.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/80.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/80.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/81.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/81.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/81.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/82.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/82.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/82.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/83.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/83.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/83.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/84.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/84.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/84.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/85.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/85.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/85.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/86.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/86.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/86.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/87.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/87.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/87.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/88.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/88.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/88.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/89.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/89.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/89.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/90.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/90.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/90.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/91.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/91.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/91.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/92.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/92.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/92.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/93.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/93.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/93.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/94.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/94.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/94.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/95.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/95.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/95.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/96.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/96.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/96.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/97.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/97.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/97.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/98.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/98.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/98.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/99.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_dataset/output_crops/99.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_cutting.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_cutting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jg.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/jg.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_construction.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_construction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_dataset/classes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_dataset/output_crops/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/my_dataset/output_crops/2.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +356,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="manhole_cover_detection" />

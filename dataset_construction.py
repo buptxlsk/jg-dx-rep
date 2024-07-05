@@ -3,7 +3,7 @@ import json
 from PIL import Image
 
 # 定义文件夹路径
-images_folder = 'images'
+images_folder = 'D:/Code/jg_dx_yolo/my_dataset/output_crops'
 
 # 遍历文件夹中的所有json文件
 for file_name in os.listdir(images_folder):
