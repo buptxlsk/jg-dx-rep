@@ -104,8 +104,8 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
     model.load_state_dict(best_model_wts)
     return model
 
-# 训练模型，指定训练 25 个 epoch
-model = train_model(model, criterion, optimizer, scheduler, num_epochs=25)
+# 训练模型，指定训练epoch
+model = train_model(model, criterion, optimizer, scheduler, num_epochs=35)
 
 # 保存模型
 torch.save(model.state_dict(), 'best_model.pt')
