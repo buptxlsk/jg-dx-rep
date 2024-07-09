@@ -34,8 +34,17 @@ class_names = ['broke', 'circle', 'good', 'lose', 'uncovered']
 # 加载模型结构和权重
 model = models.resnet50(weights=None)
 num_ftrs = model.fc.in_features
-model.fc = nn.Linear(num_ftrs, len(class_names))
-model.load_state_dict(torch.load('./train1/best_model.pt'))
+#model.fc = nn.Linear(num_ftrs, len(class_names))
+model.fc = nn.Sequential(
+    nn.Linear(num_ftrs, 1024),
+    nn.ReLU(),
+    nn.Dropout(0.5),
+    nn.Linear(1024, 512),
+    nn.ReLU(),
+    nn.Dropout(0.5),
+    nn.Linear(512, len(class_names))
+)
+model.load_state_dict(torch.load('./train3/best_model.pt'))
 model.eval()
 
 # 设备配置
@@ -72,4 +81,3 @@ for img_file in os.listdir(new_data_dir):
         shutil.copy(img_path, destination_path)
 
 print("Prediction and organization complete.")
-

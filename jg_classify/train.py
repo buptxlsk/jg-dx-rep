@@ -95,7 +95,6 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
                 best_acc = epoch_acc
                 best_model_wts = copy.deepcopy(model.state_dict())
 
-        print()
 
     print('Training complete')
     print(f'Best val Acc: {best_acc:.4f}')

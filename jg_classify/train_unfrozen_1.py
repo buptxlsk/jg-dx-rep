@@ -12,9 +12,13 @@ from sklearn.metrics import confusion_matrix, classification_report
 import seaborn as sns
 import numpy as np
 import copy
-num_epochs = 10
+
+# 设置参数
+num_epochs = 40
 batch_size = 32
 learning_rate = 0.001
+
+# 数据转换
 data_transforms = {
     'train': transforms.Compose([
         transforms.RandomResizedCrop(224),
@@ -29,6 +33,8 @@ data_transforms = {
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
 }
+
+# 数据集路径
 data_dir = 'pred_photo_crop'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x), data_transforms[x]) for x in ['train', 'val']}
 dataloaders = {x: DataLoader(image_datasets[x], batch_size=batch_size, shuffle=True, num_workers=4) for x in ['train', 'val']}
@@ -37,79 +43,35 @@ class_names = image_datasets['train'].classes
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(f'Using device: {device}')
 
-#冻结所有的特征层，只训练分类层
-weights = ResNet50_Weights.IMAGENET1K_V1
+# 冻结所有的特征提取层，解冻最后一个block和分类器层
+weights = models.ResNet50_Weights.IMAGENET1K_V1  
 model_ft = models.resnet50(weights=weights)
 num_ftrs = model_ft.fc.in_features
-model_ft.fc = nn.Linear(num_ftrs, len(class_names))
+
+model_ft.fc = nn.Sequential(
+    nn.Linear(num_ftrs, 1024),
+    nn.ReLU(),
+    nn.Dropout(0.5),
+    nn.Linear(1024, 512),
+    nn.ReLU(),
+    nn.Dropout(0.5),
+    nn.Linear(512, len(class_names))
+)
 
 for param in model_ft.parameters():
     param.requires_grad = False
 
-for param in model_ft.fc.parameters():
-    param.requires_grad = True
+for name, param in model_ft.named_parameters():
+    if "layer4" in name or "fc" in name:
+        param.requires_grad = True
 
 model_ft = model_ft.to(device)
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(model_ft.fc.parameters(), lr=learning_rate, momentum=0.9)
+optimizer = optim.Adam(filter(lambda p: p.requires_grad, model_ft.parameters()), lr=1e-4)
 # 定义学习率调度器
-scheduler = lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
 
-# 冻结所有的特征提取层，解冻最后两个block和分类器层
-#weights = models.ResNet50_Weights.IMAGENET1K_V1  
-#model_ft = models.resnet50(weights=weights)
-#num_ftrs = model_ft.fc.in_features
-#model_ft.fc = nn.Sequential(
-#    nn.Linear(num_ftrs, 1024),
-#    nn.ReLU(),
-#    nn.Dropout(0.5),
-#    nn.Linear(1024, 512),
-#    nn.ReLU(),
-#    nn.Dropout(0.5),
-#   nn.Linear(512, len(class_names))
-#)
-
-#for param in model_ft.parameters():
-#    param.requires_grad = False
-
-#for name, param in model_ft.named_parameters():
-#    if "layer4" in name or "layer3" in name or "fc" in name:
-#        param.requires_grad = True
-#model_ft = model_ft.to(device)
-#criterion = nn.CrossEntropyLoss()
-#optimizer = optim.Adam(filter(lambda p: p.requires_grad, model_ft.parameters()), lr=1e-4)
-# 定义学习率调度器
-#scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
-
-# 冻结所有的特征提取层，解冻最后一个block和分类器层
-#weights = models.ResNet50_Weights.IMAGENET1K_V1  
-#model_ft = models.resnet50(weights=weights)
-#num_ftrs = model_ft.fc.in_features
-
-#model_ft.fc = nn.Sequential(
-#    nn.Linear(num_ftrs, 1024),
-#   nn.ReLU(),
-#    nn.Dropout(0.5),
-#    nn.Linear(1024, 512),
-#    nn.ReLU(),
-#    nn.Dropout(0.5),
-#    nn.Linear(512, len(class_names))
-#)
-
-#for param in model_ft.parameters():
-#    param.requires_grad = False
-
-#for name, param in model_ft.named_parameters():
-#    if "layer4" in name or "fc" in name:
-#	param.requires_grad = True
-
-#model_ft = model_ft.to(device)
-#criterion = nn.CrossEntropyLoss()
-#optimizer = optim.Adam(filter(lambda p: p.requires_grad, model_ft.parameters()), lr=1e-4)
-# 定义学习率调度器
-#scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
-
-#训练模型
+# 训练模型
 def train_model(model, criterion, optimizer, num_epochs=25):
     best_model_wts = copy.deepcopy(model.state_dict())
     best_acc = 0.0
@@ -154,9 +116,15 @@ def train_model(model, criterion, optimizer, num_epochs=25):
                 best_acc = epoch_acc
                 best_model_wts = copy.deepcopy(model.state_dict())
 
+        scheduler.step()
+
     model.load_state_dict(best_model_wts)
     return model
-model_ft = train_model(model_ft, criterion, optimizer, num_epochs=50)
+
+# 训练和验证模型
+model_ft = train_model(model_ft, criterion, optimizer, num_epochs=num_epochs)
+
+# 保存模型
 def save_model(model, base_dir='train'):
     folder_num = 1
     while os.path.exists(f'{base_dir}{folder_num}'):
