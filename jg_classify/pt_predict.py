@@ -36,15 +36,15 @@ model = models.resnet50(weights=None)
 num_ftrs = model.fc.in_features
 #model.fc = nn.Linear(num_ftrs, len(class_names))
 model.fc = nn.Sequential(
-    nn.Linear(num_ftrs, 1024),
-    nn.ReLU(),
-    nn.Dropout(0.5),
-    nn.Linear(1024, 512),
-    nn.ReLU(),
-    nn.Dropout(0.5),
-    nn.Linear(512, len(class_names))
+  nn.Linear(num_ftrs, 1024),
+  nn.ReLU(),
+  nn.Dropout(0.5),
+  nn.Linear(1024, 512),
+  nn.ReLU(),
+  nn.Dropout(0.5),
+  nn.Linear(512, len(class_names))
 )
-model.load_state_dict(torch.load('./train3/best_model.pt'))
+model.load_state_dict(torch.load('./train2/best_model.pt'))
 model.eval()
 
 # 设备配置

@@ -14,7 +14,7 @@ import numpy as np
 import copy
 
 # 设置参数
-num_epochs = 50
+num_epochs = 40
 batch_size = 32
 learning_rate = 0.001
 
@@ -34,6 +34,7 @@ data_transforms = {
     ]),
 }
 
+# 数据集路径
 data_dir = 'pred_photo_crop'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x), data_transforms[x]) for x in ['train', 'val']}
 dataloaders = {x: DataLoader(image_datasets[x], batch_size=batch_size, shuffle=True, num_workers=4) for x in ['train', 'val']}
@@ -42,10 +43,11 @@ class_names = image_datasets['train'].classes
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 print(f'Using device: {device}')
 
-# 加载预训练的 ResNet50 模型
+# 冻结所有的特征提取层，解冻最后一个block和分类器层
 weights = models.ResNet50_Weights.IMAGENET1K_V1  
 model_ft = models.resnet50(weights=weights)
 num_ftrs = model_ft.fc.in_features
+
 model_ft.fc = nn.Sequential(
     nn.Linear(num_ftrs, 1024),
     nn.ReLU(),
@@ -56,32 +58,23 @@ model_ft.fc = nn.Sequential(
     nn.Linear(512, len(class_names))
 )
 
-# 冻结所有层
 for param in model_ft.parameters():
     param.requires_grad = False
 
-# 解冻最后两个 block 和分类器层
 for name, param in model_ft.named_parameters():
-    if "layer4" in name or "layer3" in name or "fc" in name:
+    if "layer4" in name or "fc" in name:
         param.requires_grad = True
 
 model_ft = model_ft.to(device)
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(filter(lambda p: p.requires_grad, model_ft.parameters()), lr=learning_rate)
-
+optimizer = optim.Adam(filter(lambda p: p.requires_grad, model_ft.parameters()), lr=1e-4)
 # 定义学习率调度器
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
 
-# 训练模型函数
-def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
+# 训练模型
+def train_model(model, criterion, optimizer, num_epochs=25):
     best_model_wts = copy.deepcopy(model.state_dict())
     best_acc = 0.0
-
-    # 初始化历史记录
-    train_loss_history = []
-    val_loss_history = []
-    train_acc_history = []
-    val_acc_history = []
 
     for epoch in range(num_epochs):
         print('Epoch {}/{}'.format(epoch + 1, num_epochs))
@@ -119,13 +112,6 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
 
             print('{} Loss: {:.4f} Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc))
 
-            if phase == 'train':
-                train_loss_history.append(epoch_loss)
-                train_acc_history.append(epoch_acc)
-            else:
-                val_loss_history.append(epoch_loss)
-                val_acc_history.append(epoch_acc)
-
             if phase == 'val' and epoch_acc > best_acc:
                 best_acc = epoch_acc
                 best_model_wts = copy.deepcopy(model.state_dict())
@@ -133,12 +119,10 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
         scheduler.step()
 
     model.load_state_dict(best_model_wts)
-    return model, train_loss_history, val_loss_history, train_acc_history, val_acc_history
+    return model
 
 # 训练和验证模型
-model_ft, train_loss_history, val_loss_history, train_acc_history, val_acc_history = train_model(
-    model_ft, criterion, optimizer, scheduler, num_epochs=num_epochs
-)
+model_ft = train_model(model_ft, criterion, optimizer, num_epochs=num_epochs)
 
 # 保存模型
 def save_model(model, base_dir='train'):

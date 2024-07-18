@@ -1,0 +1,32 @@
+{
+  "filename": "2024-07-16T08:30:00Z_below",
+  "timestamp": "2024-07-16T08:30:00Z",
+  "gps": {
+    "latitude": 40.712776,
+    "longitude": -74.005974
+  },
+  "quantity":2,
+  "construction":-1,
+  "road_damage":-1,
+  "manhole": [
+    {
+      "id": 1,
+      "coordinates": {
+        "x1": 100,
+        "y1": 200,
+        "x2": 150,
+        "y2": 250
+      },
+    },
+    {
+      "id": 2,
+      "coordinates": {
+        "x1": 300,
+        "y1": 400,
+        "x2": 350,
+        "y2": 450
+      },
+    }
+  ]
+}
+

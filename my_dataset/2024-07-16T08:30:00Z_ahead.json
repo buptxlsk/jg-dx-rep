@@ -1,0 +1,13 @@
+{
+  "filename": "2024-07-16T08:30:00Z_ahead",
+  "timestamp": "2024-07-16T08:30:00Z",
+  "gps": {
+    "latitude": 40.712776,
+    "longitude": -74.005974
+  },
+  "quantity":2,
+  "construction":-1,
+  "road_damage":-1,
+  "manhole":-1
+}
+

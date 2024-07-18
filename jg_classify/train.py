@@ -107,5 +107,15 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
 model = train_model(model, criterion, optimizer, scheduler, num_epochs=35)
 
 # 保存模型
-torch.save(model.state_dict(), 'best_model.pt')
+def save_model(model, base_dir='train'):
+    folder_num = 1
+    while os.path.exists(f'{base_dir}{folder_num}'):
+        folder_num += 1
+    new_dir = f'{base_dir}{folder_num}'
+    os.makedirs(new_dir)
+    save_path = os.path.join(new_dir, 'best_model.pt')
+    torch.save(model.state_dict(), save_path)
+    print(f'Model saved to {save_path}')
+
+save_model(model)
 

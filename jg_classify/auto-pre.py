@@ -10,7 +10,7 @@ def mkfile(file):
  
  
 # 获取 photos 文件夹下除 .txt 文件以外所有文件夹名（即3种分类的类名）
-file_path = '/home/xlsk/Code/jg-dx-rep/jg_classify/data/'
+file_path = '/home/xlsk/Code/mmpretrain/configs/resnet/photo_crop/'
 flower_class = [cla for cla in os.listdir(file_path) if ".py" not in cla]
  
 # 创建 训练集train 文件夹，并由3种类名在其目录下创建3个子目录

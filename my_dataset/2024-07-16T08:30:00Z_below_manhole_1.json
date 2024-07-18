@@ -1,0 +1,29 @@
+{
+  "filename": "2024-07-16T08:30:00Z_below_manhole_1",
+  "timestamp": "2024-07-16T08:30:00Z",
+  "gps": {
+    "latitude": 40.712776,
+    "longitude": -74.005974
+  },
+  "manhole_id": 1,
+  "functional": {
+    "class": "1-闸",
+    "coordinates": {
+      "x1": 100,
+      "y1": 200,
+      "x2": 150,
+      "y2": 250
+    }
+  },
+  "unit": {
+    "class": "0-昌平自来水",
+    "coordinates": {
+      "x1": 100,
+      "y1": 200,
+      "x2": 150,
+      "y2": 250
+    }
+  }
+}
+
+

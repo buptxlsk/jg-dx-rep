@@ -6,9 +6,9 @@ from ultralytics import YOLO
 model = YOLO("/home/xlsk/Code/jg-dx-rep/runs/detect/train3/weights/best.pt")
 
 # 输入图像文件夹
-img_folder = "/home/xlsk/Code/jg-dx-rep/my_dataset/train/uncovered"
+img_folder = "/home/xlsk/Code/jg-dx-rep/test/"
 # 输出裁剪图像文件夹
-output_folder = "/home/xlsk/Code/jg-dx-rep/my_dataset/train/uncovered_crop"
+output_folder = "/home/xlsk/Code/jg-dx-rep/test/"
 os.makedirs(output_folder, exist_ok=True)
 
 # 初始化序号
@@ -29,6 +29,9 @@ for img_name in os.listdir(img_folder):
         for box in boxes:
             x1, y1, x2, y2 = map(int, box.xyxy[0].tolist())
 
+            # 打印预测框的坐标
+            print(f"Image: {img_name}, Box Coordinates: x1={x1}, y1={y1}, x2={x2}, y2={y2}")
+
             # 裁剪图像
             crop_img = img[y1:y2, x1:x2]
 
@@ -41,3 +44,4 @@ for img_name in os.listdir(img_folder):
             crop_index += 1
 
 print("裁剪图像保存完毕！")
+
